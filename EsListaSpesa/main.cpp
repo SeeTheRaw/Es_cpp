@@ -1,7 +1,8 @@
 #include <iostream>
+using namespace std;
+
 
 int main() {
-    std::cout << "No bitches!" << std::endl;
-    std::cout << "yes" << std::endl;
+cout << "deez nuts";
     return 0;
 }

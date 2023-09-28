@@ -5,12 +5,13 @@
 
 class ShoppingList{
     public:
+        ShoppingList(std::list<Item *> lSpesa) : listaSpesa(lSpesa) {};
 
-    void addElement(Item *obj){
+            void addElement(Item *obj)
+        {
 
-        listaSpesa.push_back(obj);
-
-    }
+            listaSpesa.push_back(obj);
+        }
 
     void removeElement(Item* obj){
         

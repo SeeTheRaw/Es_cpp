@@ -7,42 +7,78 @@ using namespace std;
 class Item{
 
     public:
-    Item(string d, int q, string c, bool p);
+        Item(string n, string d, int q, string c, bool p) : name(n), description(d), quantity(q), category(c), purchased(p) {}
+        
 
-    void setDescription(string d){
-        description = d;
-    }
+        const string &getName() const{
+            return name;
+        }
 
-    string getDescription(){
-        return description;
-    }
+        void setName(const string &n){
+            Item::name = n;
+        }
 
-    void setQuantity(int q){
-        quantity = q;
-    }
 
-    int getQuantity(){
-        return quantity;
-    }
+        const string &getDescription() const
+        {
+            return description;
+        }
 
-    void setCategory(string c){
-        category = c;
-    }
+        void setDescription(const string &d)
+        {
+            Item::description = d;
+        }
 
-    string getCategory(){
-        return category;
-    }
+        int getQuantity()
+        {
+            return quantity;
+        }
 
-    void setPurchased(bool p){
-        purchased = p;
-    }
-    
-    bool isPurchased(){
-        return purchased;
-    }
+        void setQuantity(int q)
+        {
+            Item::quantity = q;
+        }
+
+
+        const string &getCategory() const
+        {
+            return category;
+        }
+        void setCategory(const string &c)
+        {
+           Item::category = c;
+        }
+
+
+        bool isPurchased()
+        {
+            return purchased;
+        }
+
+        void setPurchased(bool p)
+        {
+            Item::purchased = p;
+        }
+
+
+
+
+// funzione che stampa la lista degli attributi dell'oggetto
+
+        void printItem() const {
+
+            cout << "Name: " << name << "\n";
+            cout << "Description: " << description << "\n";
+            cout << "Quantity: " << quantity << "\n";
+            cout << "Category: " << category << "\n";
+            cout << "Purchased: " << purchased << "\n\n";
+        }
+
+        
 
     private:
-    string description , category;
+
+    string name, description, category;
     int quantity;
     bool purchased;
 };

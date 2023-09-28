@@ -5,6 +5,6 @@ rappresenta un oggetto da comprare. descrizione, quantità (opzionale), categori
 bevanda, carne…) e booleano che indica se l’oggetto è stato acquistato (3 punti).
 Si scriva quindi una classe che rappresenta una lista di oggetti da acquistare e abbia un 
 nome (4 punti). Bonus di 3 punti se la lista ordina gli oggetti sulla base della loro categoria 
-(si usi una multimappa, i metodi da usare sono gli stessi riportati in domanda 6).
+(si usi le liste, i metodi da usare sono gli stessi riportati in domanda 6).
 Si scriva una classe che rappresenta tutte le liste della spesa che si possono avere. La 
 classe deve poter stampare per ogni lista quanti oggetti sono ancora da comprare (3 punti).

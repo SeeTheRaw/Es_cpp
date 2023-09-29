@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
-#include "ShoppingList.hpp"
+#include "ListManager.hpp"
 
 
 int main() {
-cout << "\n\nciao mostrami cosa hai preso al Supermercato\n\n";
+cout << "\n\nciao mostrami cosa hai preso al Supermercato!\n\n";
 
 Item mela {"mela", "frutto rosso", 3, "frutta", true};
 Item banana {"banana", "frutto giallo lungo", 1, "frutta", true};
@@ -17,7 +17,7 @@ Item uova {"uova", "uova di gallina", 6, "latticini", false};
 Item ciambella {"ciambella", "dolce a forma di ciambella", 1, "dolci", false};
 Item patatine {"patatine", "patatine fritte", 1, "snack", false};
 
-ShoppingList lista1 {std::list<Item *> {&mela, &banana, &penna, &bistecca, &pane, &quaderno}};
+ShoppingList lista1 {"lista1", std::list<Item *> {&mela, &banana, &penna, &bistecca, &pane, &quaderno}};
 
 lista1.printList();
 
@@ -43,8 +43,15 @@ switch (scelta[0]) {
         break;
 }
 
-cout << "\n\nEcco la lista aggiornata\n\n";
+cout << "\n\nEcco la lista aggiornata:\n\n";
 lista1.printList();
+
+cout << "\n Ecco il mio primo archivio delle liste:\n\n";
+ListManager archivio01 {std::list<ShoppingList *> {&lista1}};
+archivio01.printListNames();
+
+cout << "\n\nEcco la lista di elementi non ancora acquistati:\n\n";
+archivio01.printMissing();
 
 
 

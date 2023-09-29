@@ -5,7 +5,7 @@
 
 class ShoppingList{
     public:
-        ShoppingList(std::list<Item *> lSpesa) : listaSpesa(lSpesa) {};
+        ShoppingList(string nlista, std::list<Item *> lSpesa) : nomeLista(nlista), listaSpesa(lSpesa) {};
 
             void addElement(Item *obj)
         {
@@ -16,6 +16,10 @@ class ShoppingList{
     void removeElement(Item* obj){
         
         listaSpesa.remove(obj);
+    }
+
+    const string &getName(){
+        return nomeLista;
     }
 
     void posPrint(int n){
@@ -34,9 +38,18 @@ class ShoppingList{
             (*itr)->printItem();
         }
     }
+    
+    void checkPurchased(){
+        for(auto itr = listaSpesa.begin(); itr != listaSpesa.end(); itr++){
+            if((*itr)->isPurchased() == false){
+                (*itr)->printItem();
+            }
+        }
+    }
 
 
     private:
+    string nomeLista;
     std::list <Item*> listaSpesa;
 };
 

@@ -2,7 +2,8 @@
 #include "ListManager.hpp"
 
 
-int main() {
+int main() 
+{
 cout << "\n\nciao mostrami cosa hai preso al Supermercato!\n\n";
 
 Item mela {"mela", "frutto rosso", 3, "frutta", true};

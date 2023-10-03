@@ -57,4 +57,4 @@ class ShoppingList{
 };
 
 
-#endif
+#endif // SHOPPING_H

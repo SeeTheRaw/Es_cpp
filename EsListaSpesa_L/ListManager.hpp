@@ -37,4 +37,4 @@ class ListManager{
         std::list<ShoppingList *> listaManager;
 };
 
-#endif
+#endif // LISTMANAGER_HPP

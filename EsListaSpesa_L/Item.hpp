@@ -83,4 +83,4 @@ class Item{
     bool purchased;
 };
 
-#endif
+#endif // ITEM_H

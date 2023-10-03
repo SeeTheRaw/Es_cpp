@@ -5,24 +5,25 @@
 
 class ShoppingList{
     public:
-        ShoppingList(string nlista, std::list<Item *> lSpesa) : nomeLista(nlista), listaSpesa(lSpesa) {};
+    ShoppingList(string nlista, std::list<Item *> lSpesa) : nomeLista(nlista), listaSpesa(lSpesa) {};
 
-            void addElement(Item *obj)
-        {
+    void addElement(Item *obj)
+    {
+        listaSpesa.push_back(obj);
+    }
 
-            listaSpesa.push_back(obj);
-        }
-
-    void removeElement(Item* obj){
-        
+    void removeElement(Item* obj)
+    {
         listaSpesa.remove(obj);
     }
 
-    const string &getName(){
+    const string &getName()
+    {
         return nomeLista;
     }
 
-    void posPrint(int n){
+    void posPrint(int n)
+    {
         int count = 0;
         for(auto &itr:listaSpesa){
             if(count == n){
@@ -33,13 +34,15 @@ class ShoppingList{
         }
     }
 
-    void printList(){
+    void printList()
+    {
         for(auto itr = listaSpesa.begin(); itr != listaSpesa.end(); itr++){
             (*itr)->printItem();
         }
     }
     
-    void checkPurchased(){
+    void checkPurchased()
+    {
         for(auto itr = listaSpesa.begin(); itr != listaSpesa.end(); itr++){
             if((*itr)->isPurchased() == false){
                 (*itr)->printItem();

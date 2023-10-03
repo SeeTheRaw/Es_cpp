@@ -1,3 +1,5 @@
+#ifndef LISTMANAGER_HPP
+#define LISTMANAGER_HPP
 #include "ShoppingList.hpp"
 
 class ListManager{
@@ -34,3 +36,5 @@ class ListManager{
     private:
         std::list<ShoppingList *> listaManager;
 };
+
+#endif

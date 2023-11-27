@@ -1,0 +1,13 @@
+ESERCIZIO 4: Observer 
+
+Si considerino le classi RAMUsage e CPUUsage, assieme alla classe SystemMonitor. La 
+classe SystemMonitor deve poter monitorare sia un oggetto di tipo RAMUsage che uno di 
+tipo CPUUsage (es. per implementare un display di sistema di un sistema operativo), e 
+ricevere informazioni sul cambiamento di stato di ognuno di questi oggetti, allo scopo di 
+mostrarlo. La classe RAMUsage riporta la quantità di memoria ancora libera e CPUUsage
+riporta l’uso in percentuale della CPU. Si adotti il design pattern Observer (si consiglia nella 
+versione pull) per completare il codice, e si disegni il diagramma UML di classe di questo 
+problema. Se necessario si sfrutti l’RTTI per invocare i metodi specifici dei soggetti da 
+monitorare per ottenerne lo stato. 
+Bonus: RAMUsage avvisa solo quando la RAM disponibile è minore di 500MB, CPUUsage
+avvisa solo quando la percentuale di uso è maggiore di 80 (2 punti)

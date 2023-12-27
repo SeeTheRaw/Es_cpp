@@ -14,6 +14,4 @@ class Subject{
         virtual void Notify() = 0;
 };
 
-
-
 #endif // SUBJECT_H

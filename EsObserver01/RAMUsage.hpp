@@ -36,7 +36,7 @@ public:
 
 private:
 int ramfree;
-std::list<Observer *>obs;
+std::list<Observer *> obs;
 };
 
 

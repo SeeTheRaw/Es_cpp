@@ -1,0 +1,11 @@
+ES VideoEditing:
+
+Si implementino le classi ImageElement, VideoElement e TrackElement
+da usare in un programma di video editing in cui si creano tracce video a partire
+da immagini, video e altre tracce video. ImageElement e VideoElement sono caratterizzate
+dal nome del file, risoluzione dell'immagine o fotogramma e durata nel caso di video. Le immagini
+inserite in una traccia video devono avere tutte la stessa durata (5 secondi). Una traccia video, rappresentata
+da TrackElement, deve poter includere sia immagini che video che altre tracce. Le classi hanno due metodi comuni:
+con il metodo play() viene mostrato il contenuto, con il metodo getDuration() se ne ottiene la durata espressa in secondi.
+Nel caso di TrackElement si deve fare il play in sequenza di tutti gli elementi inseriti; Quando si invoca il metodo getDuration() di TrackElement
+questo deve rendere la durata totale della traccia, calcolata a partire dalla durata degli elementi in essa contenuti.

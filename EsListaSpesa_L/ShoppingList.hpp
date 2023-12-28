@@ -12,7 +12,7 @@ class ShoppingList{
         listaSpesa.push_back(obj);
     }
 
-    void removeElement(Item* obj)
+    void removeElement(Item *obj)
     {
         listaSpesa.remove(obj);
     }

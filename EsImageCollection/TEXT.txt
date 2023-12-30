@@ -1,0 +1,10 @@
+Es Collezione foto:
+
+Si consideri un programma come Foto di macOS dove si gestiscono collezioni di foto.
+Si implementi una classe che rappresenta una foto indicando risoluzione (larghezza e altezza), luogo
+dove è stata scattata (può essere un dato nullo se scattata con dispositivo senza GPS), se è una foto preferita
+e nomi delle persone presenti (se note,altrimenti è un elenco nullo). Si scriva una classe per gestire 
+collezioni di foto, con funzioni per aggiungere e cancellare foto e cambiarne lo stato di preferito.
+Appena l'immagine viene aggiunta al programma viene associata ad un identificatore univoco che viene poi usato
+per le operazioni di cancellazione e modifica. La classe che gestisce la collezione ha dei metodi per rendere liste di foto preferite
+che sono state scattate in un certo luogo o che contengono una certa persona.

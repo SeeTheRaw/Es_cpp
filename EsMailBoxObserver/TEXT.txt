@@ -1,0 +1,12 @@
+Es MailBox Observer:
+
+Si consideri un programma di posta elettronica e si implementino le classi
+Mail, MailBox, GuiNotifier e IconBadgeMonitor. La classe Mail rappresenta
+un'email con titolo, mittente, corpo del testo e booleano che indica se la mail
+è stata già letta. MailBox contiene le mail relative ad una cartella di posta di un programma
+di email, e deve consentire di aggiungere nuove email e leggere email ad una determinata posizione
+(es. la mail n. 3), quindi ponendo a letto il booleano della mail relativa. Le classi GuiNotifier e IconBadgeMonitor
+devono poter monitorare un oggetto di tipo Mailbox e ricevere informazioni sul cambiamento di stato di questo oggetto
+allo scopo, rispettivamente, di: (1) mostrare in un centro notifiche di un sistema operativo il titolo e mittente
+dell'ultima mail arrivata; (2) mostrare il numero di email ancora da leggere disegnandolo sull'icona del programma di posta.
+Si adotti il design pattern Observer (versione a scelta) per completare il codice.

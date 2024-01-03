@@ -1,0 +1,33 @@
+Es DiskDirectory :
+
+Si disegni e implementi una classe DiskFile che rappresenta un file di un filesystem
+di un sistema operativo con nome del file (ovvero contiene qualcosa del tipo "data.xls),
+dimensione in byte e variabile che indica se scrivibile o no. Si disegni e implementi una
+classe DiskDirectory che rappresenta una directory di un filesystem di un sistema operativo
+con nome della directory (ovvero contiene qualcosa del tipo "Documents") e l'elenco di directory
+e file inclusi al suo interno. La classe DiskDirectory deve avere un metodo list() che stampa su schermo
+l'elenco di directory e file, ed un metodo remove() che dato un nome cancella l’elemento corrispondente (7 punti). Sia DiskFile
+che DiskDirectory devono avere un metodo print() che ne stampa i dettagli (1 punto).
+Dato che una directory non può contenere file o directory con lo stesso nome si consiglia 
+l’uso di template<class key_type, class mapped_type> std::map, di cui 
+si riportano i seguenti metodi utili allo sviluppo delle classi:
+
+Inserimento e selezione di elementi:
+
+mapped_type& operator[] (const key_type& k);
+
+Ricerca di elementi (ritornano un iteratore a map::end() nel caso l’elemento cercato non 
+sia presente):
+
+iterator find (const key_type& k);
+const_iterator find (const key_type& k) const;
+
+Cancellazione di elementi:
+
+void erase (iterator position);
+size_type erase (const key_type& k);
+void erase (iterator first, iterator last);
+
+Si ricorda che gli iteratori di una mappa puntano agli elementi che sono di tipo 
+std::pair<const key_type, mapped_type>, e che usando i membri first e 
+second si ottengono la chiave e il valore cui puntano

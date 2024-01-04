@@ -1,0 +1,32 @@
+Sia data una struct Pixel che rappresenta i tre valori R, G, B di un pixel di un immagine
+compresi tra 0 e 255.
+Sia data la seguente classe Image che rappresenta un'immagine. Il metodo setPixel imposta
+il valore di un pixel alle coodrinate (x,y) modificando adeguatamente il contenuto del buffer
+dei Pixel (implementare il metodo), ed un metodo getPixel che ritorna il valore di un pixel alle coodrinate
+richieste; i due metodi lanciano un'eccezione di tipo std::out_of_bound in caso le coordinate non siano accettabili (si devono implementare
+i metodi). 
+La classe ha un metodo save() che salva sul file dal nome specificato l'immagine, ed un metodo load() che
+legge un'immagine da file; questi metodi usano quattro funzioni che fanno parte di una qualche libreria per la lettura
+e scrittura di immagini, ovvero decompressImage, compressBuffer, saveCompressedBuffer e freeBuffer (NON si devono implementare questi metodi)
+riportati nel codice.
+Completare la classe per fare in modo che descriva un'immagine, con dimensione orizzontale e verticale; dato che l'operazione di compressione
+è lenta si evitino i salvataggi inutili dell'immagine.
+Indicare se la classe necessità di deep copy motivando la risposta e nel caso implementarla.
+
+class Image{
+    public:
+    //.....;
+    void load(std::string name){
+        buffer = decompressImage(name);
+    }
+    void save(std::string name) {
+        Pixel* compressedBuffer = compressedBuffer(buffer);
+        saveCompressedBuffer(name,compressedBuffer);
+        freeBuffer(compressedBuffer);
+    }
+    void setPixel(int x, int y, const Pixel& pix);
+    Pixel getPixel(int x. int y);
+    
+    private:
+    Pixel* buffer;
+}

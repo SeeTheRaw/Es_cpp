@@ -1,0 +1,19 @@
+Si supponga di avere un programma di grafica che consente
+di disegnare forme geometriche, tra cui rettangoli. Per questo si ha una classe Rectangle il cui
+costruttore riceve in ingresso le coordinate X e Y dell'angolo in alto a sinistra e in basso a destra.
+La classe ha un metodo che disegna il rettangolo a partire da queste cordinate.
+Nella nuova versione del programma si deve poter usare una nuova rappresentazione del rettangolo dove si usano
+le coordinate cartesiane dell'angolo in alto a sinistra oltre che larghezza e altezza.
+Per compatibilità con i file dei disegni delle vecchie versioni si deve continuare ad usare la vecchia classe Rectangle
+nel nuovo programma che si aspetta di rappresentare i rettangoli usando la nuova rappresentazione. Si implementi una soluzione
+basata sul design pattern Adapter.
+
+OBJECT ADAPTER: Diagramma UML
+
+
+                                 TARGET:                             ADAPTEE:
+           CLIENT =======>     OldRectangle                        NewRectangle
+                                        ^                              ^
+                                        |                              |
+                                        |       ADAPTER:               |
+                                        ----RectangleAdapter------------

@@ -1,0 +1,8 @@
+Si implementi una classe AudioTrack che rappresenta una canzone con titolo, durata in secondi
+e nome del file dell'immagine della copertina dell'album di cui fa parte. La classe ha un metodo
+play() che suona la canzone.
+Si implementi quindi una classe Playlist, che include un elenco ordinato di AudioTrack da suonare in sequenza;
+la playlist ha un nome. Si devono fornire metodi per aggiungere in coda una canzone (addTrack()), eliminare una canzone
+dato il titolo (removeTrack()) o suonare direttamente una canzone dato il titolo (PlayTrack()). La classe ha un metodo
+play() che suona le canzoni secondo la loro sequenza data.
+Si implementi una classe MusicLibrary che contiene Playlist e consente di inserirle, cercarle e suonarle in base al loro nome.

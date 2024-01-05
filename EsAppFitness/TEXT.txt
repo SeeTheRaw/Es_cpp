@@ -1,0 +1,7 @@
+Si consideri un'applicazione per fare tracciamento delle attività e che traccia
+il numero di ore in cui si sta in piedi, la durata di attività fisica e le calorie consumate.
+Per ognuna di queste attività si può impostare un obbiettivo minimo ed incrementarne le quantità.
+Ad ogni attività fisica è associato anche un valore di calorie consumate ed una stringa che descrive
+l'attività in questione. La app fornisce un elenco delle attività fisiche registrate. La app fornisce
+lo stato attuale dei tre indicatori. Deve essere possibile cancellare un'attività fisica, aggiornando
+di conseguenza anche le calorie.

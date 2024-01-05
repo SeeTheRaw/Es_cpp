@@ -1,0 +1,9 @@
+Scrivere una classe che rappresenti un inventario di un gioco in cui
+si abbiano come elementi: Robot, Weapon ed Equipment. L'inventario può avere
+una dimensione massima, es. può essere richiesto che l'inventario contenga un numero
+massimo di elementi, specificando un parametro del costruttore. Deve essere possibile inserire
+un elemento in coda nell'inventario o in una certa posizione. Deve essere possibile eliminare un elemento
+in una certa posizione. Se si cerca di inserire un elemento in una posizione oltre il limite o cancellare o prendere
+un elemento in una posizione non consentita si deve lanciare l'eccezione std::out_of_range. L'esercizio può essere risolto
+con programmazione generica o usando l'ereditarietà. In caso sia necessario, implementare anche costruttore di copia e operatore di
+assegnazione.

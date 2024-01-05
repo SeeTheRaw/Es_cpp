@@ -25,31 +25,31 @@ class Activity{
         description = d;
     }
 
-    int getDuration() const{
+    const int &getDuration() const{
         return duration;
     }
 
-    void setDuration(const int du){
+    void setDuration(const int &du){
         duration = du;
     }
 
-    int getGoal() {
+    int &getGoal() {
         return goal;
     }
 
-    void setGoal(int g){
+    void setGoal(int &g){
         goal = g;
     }
 
-    int getCaloriesBurned(){
+    int &getCaloriesBurned(){
         return caloriesBurned;
     }
 
-    void setCaloriesBurned(int c){
+    void setCaloriesBurned(int &c){
         caloriesBurned = c;
     }
 
-    void updateGoal(int g){
+    void updateGoal(int &g){
         goal += g;
     }
 
@@ -58,7 +58,6 @@ class Activity{
     void printActivity(){
         cout << "\nAttivita => " << name << "\nDescrizione => " << description << "\nDurata => " << duration << " ora/e \nObbiettivo => " << goal << " ora/e \nCalorie bruciate => " << caloriesBurned << "\n";
     }
-
 
 
     private:

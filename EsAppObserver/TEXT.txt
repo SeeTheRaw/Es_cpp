@@ -1,0 +1,7 @@
+Si consideri una classe AppDownloader, componente di una applicazione di tipo App Store
+che serve a scaricare e aggiornare applicazioni su uno smartphone o computer. La classe AppDownloader ha
+un metodo per aggiungere e togliere un'applicazione (rappresentata dalla classe App, che contiene dimensione in mb e nome)
+alla lista delle applicazioni da scaricare o aggiornare. La classe ha un metodo per scaricare le app nell'ordine in cui sono
+state inserite in lista. Si considerino anche le classi AppDownloaderIcon che rappresenta un'icona che mostra quanti programmi devono ancora
+essere aggiornati e AppDownloaderView che mostra quali programmi devono essere ancora scaricati. Si implementi un sistema basato sul pattern Observer
+per mostrare l'avanzamento dello scaricamento delle app. 

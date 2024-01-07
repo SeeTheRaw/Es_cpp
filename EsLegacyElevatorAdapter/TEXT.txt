@@ -1,0 +1,27 @@
+Si consideri lo sviluppo di un sistema software in cui alcune componenti vecchie devono essere
+ancora usate senza poterle aggiornare (“legacy”). In questo sistema si abbia quindi la classe
+LegacyElevator che implementa del codice per muovere un ascensore; il metodo move_by
+indica di quanti piani spostarsi in alto o in basso (per es. si passa al metodo -2 per scendere di 2
+piani, +3 per salire di 3 piani). Questo codice non può essere modificato.
+La creazione di un nuovo software di controllo degli ascensori richiede però di implementare
+l’interfaccia Elevator descritta sotto, il cui metodo move_to deve ricevere come argomento il
+numero del piano a cui andare.
+Si implementi un Adapter a scelta (10 punti). Per ottenere i 6 punti aggiuntivi si implementi la
+seconda versione di Adapter, diversa dalla precedente.
+Per ogni Adapter implementato se ne disegni il diagramma UML di classe (2 punti ogni diagramma).
+
+class LegacyElevator {
+public:
+ LegacyElevator() { }
+ int get_current_level() const;
+ void move_by(int level);
+ void open_doors();
+ void close_doors();
+};
+class Elevator {
+public:
+ virtual void move_to(int level) = 0;
+ virtual void open_doors() = 0;
+ virtual void close_doors() = 0;
+ virtual ~Elevator() { }
+};

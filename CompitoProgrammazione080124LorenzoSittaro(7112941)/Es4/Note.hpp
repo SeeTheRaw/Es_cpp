@@ -6,15 +6,15 @@
 #include "Video.hpp"
 
 
-template <typename T>
+
 class Note{
 
     public:
 
-    Note(string title, string text, list<T> allegati) : title(title), text(text), allegati(allegati) {}
+    Note(const string &title, const string &text, list<MultiMediaDocument*> allegati) : title(title), text(text), allegati(allegati) {}
     ~Note(){}
 
-    void addAllegato(T &a){
+    void addAllegato(MultiMediaDocument* a){
         allegati.push_back(a);
     }
 
@@ -36,7 +36,7 @@ class Note{
 
     string title;
     string text;
-    list<T> allegati;
+    list<MultiMediaDocument*> allegati;
 
 };
 

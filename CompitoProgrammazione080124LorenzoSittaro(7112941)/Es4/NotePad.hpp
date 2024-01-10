@@ -3,13 +3,13 @@
 #include "Note.hpp"
 #include <map>
 
-template <typename T>
+
 class NotePad{
 
     public:
 
     
-    void addNote(const Note<T> &n){
+    void addNote(const Note &n){
         notes.insert(std::make_pair(n.getTitle(), n));
     }
 
@@ -29,7 +29,7 @@ class NotePad{
     }
 
 private:
-    map<string, Note<T>> notes;
+    map<string, Note> notes;
 };
 
 #endif // NOTEPAD_HPP

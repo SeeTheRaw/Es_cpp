@@ -13,10 +13,10 @@ int main(){
     allegati.push_back(&video);
 
     // creo una nota a cui allego gli allegati
-    Note<MultiMediaDocument *> myNote("Progetto", "Discussione del progetto", allegati);
+    Note myNote("Progetto", "Discussione del progetto", allegati);
 
     // creo un blocco note
-    NotePad<MultiMediaDocument *> myNotePad;
+    NotePad myNotePad;
 
     // aggiungo la nota al blocco note
     myNotePad.addNote(myNote);

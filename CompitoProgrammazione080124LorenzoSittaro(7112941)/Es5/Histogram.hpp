@@ -2,6 +2,7 @@
 #define HISTOGRAM_HPP
 #include "Student.hpp"
 #include <list>
+#include <math.h>
 
 class Histogram{
 
